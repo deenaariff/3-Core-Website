@@ -1,0 +1,26 @@
+doctype html
+
+html
+
+    head
+        title=title
+
+        // MyStyles
+        link(href='/stylesheets/style.css', rel='stylesheet')
+
+        // JQuery
+        script(src="/javascript/jquery-2.1.4.min.js", type="text/javascript")
+
+        // Animate.Css
+        link(href='/stylesheets/animate.css', rel="stylesheet")
+
+        // Bootstrap & Font Awesome
+        link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css', rel='stylesheet')
+
+        // Landing
+        script(src="/javascript/landing.js", type="text/javascript")
+
+
+    body
+        include ../public/html/header.html
+        block content 
