@@ -128,10 +128,10 @@
  * ===============================================*/
 
  .description {
- 	background: url(/images/office.jpg);
+ 	background: #fff;
  	background-size: 100%;
  	background-repeat: none;
- 	color: #fff;
+ 	color: #231F20;
 }
 
 .title {
@@ -148,7 +148,7 @@
 
 .about {
 	text-align: center;
-	color: #fff;
+	color: #231F20;
 }
 
 .about img {
@@ -159,7 +159,7 @@
 .about h2 {
 	text-align: center;
 	margin-top: 4%;
-	color: #fff;
+	color: #231F20;
 }
 
 .about p {
