@@ -30,6 +30,6 @@ block content
 		.capabalities(ng-controller="iconCtrl")
 			p Quisque commodo feugiat diam ut pretium. Phasellus efficitur lacus id lectus bibendum elementum. Aliquam vitae neque sitamet orci pharetra porta in a tellus. Mauris in elit ac lectus imperdiet sagittis vitae vulputate nisl. Nullam non consectetur arcu. Integer venenatis libero enim, vitae efficitur ante fringilla eu. Aliquam erat volutpat. Morbi consectetur blandit libero, a dictum nunc viverra ac. Aliquam commodo urna vitae sapien iaculis rhoncus
 			.icons
-			.col-xs-3(ng-repeat = "image in images")
-				img(src='images/mainIcons/{{image}}')
+			.col-xs-4(ng-repeat = "image in images")
+				img(src='images/mainIcons/{{image.name}}')
 
