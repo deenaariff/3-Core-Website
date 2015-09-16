@@ -27,9 +27,12 @@ block content
 			p Donec sed velit eget nunc iaculis tempus non id ex. Curabitur convallis dapibus nisl, non feugiat sem. Quisque ac quam ut nibh  mattis viverra. Vivamus eu auctor ante. Sed laoreet sem sed scelerisque tempor. Vestibulum lacinia iaculis massa, nec ornare nisl  tristique quis. Phasellus a eleifend risus, eu tristique mauris. Cras pretium faucibus elementum. Donec arcu dui, tempus vel porta  eu, ultricies eget erat. Donec lacinia ex at nunc viverra, eu ultricies lorem aliquet. Cras lectus leo, porttitor ullamcorper metus in,  auctor semper enim.
 			h2 COLLABORATION
 			p Mauris accumsan nibh eget nibh blandit mollis. Aliquam consectetur odio turpis, eget consequat tortor facilisis eget. Curabitur accumsan tristique massa, vitae malesuada sem tristique ac. Etiam rutrum augue nec justo congue, ac ullamcorper dui posuere. Curabitur rhoncus fringilla commodo. Quisque nec sapien aliquet, accumsan nibh vitae, rutrum velit. Integer fermentum placerat  tortor, eu vehicula tortor dapibus non. Curabitur tincidunt posuere gravida. Integer condimentum eros vel orci sagittis lobortis.
-		.capabalities(ng-controller="iconCtrl")
+		.capabalities
+			h2 CAPABILITIES
 			p Quisque commodo feugiat diam ut pretium. Phasellus efficitur lacus id lectus bibendum elementum. Aliquam vitae neque sitamet orci pharetra porta in a tellus. Mauris in elit ac lectus imperdiet sagittis vitae vulputate nisl. Nullam non consectetur arcu. Integer venenatis libero enim, vitae efficitur ante fringilla eu. Aliquam erat volutpat. Morbi consectetur blandit libero, a dictum nunc viverra ac. Aliquam commodo urna vitae sapien iaculis rhoncus
 			.icons
-			.col-xs-4(ng-repeat = "image in images")
-				img(src='images/mainIcons/{{image.name}}')
+			.images
+				ul(ng-repeat = "image in images")
+					img(src='images/ThreeCore/{{image.img}}')
+					p {{image.name}}
 

@@ -16,6 +16,7 @@ html
 
         // Bootstrap & Font Awesome
         link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css', rel='stylesheet')
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
 
         // Landing
         script(src="/javascript/landing.js", type="text/javascript")
@@ -26,6 +27,6 @@ html
         script(src="/javascript/angular/controllers.js", type="text/javascript")
 
 
-    body(ng-app = "myApp")
+    body(ng-app = "myApp" ng-controller="iconCtrl")
         include ../public/html/header.html
         block content 
