@@ -34,6 +34,11 @@
     src: url('/fonts/Gotham-Light.otf');
 }
 
+ @font-face {
+    font-family: Bold;
+    src: url('/fonts/Gotham-Bold.otf');
+}
+
  html body {
 	color: #000000;
 	font-family: Main;
@@ -82,6 +87,11 @@ i {
 
 .landing .logo {
 	text-align: center;
+	margin-right: 2%;
+}
+
+.landing .bold {
+	font-family: Bold;
 }
 
 .landing p {
@@ -183,9 +193,15 @@ i {
 	text-align: center;
 	background-image: url('/images/office.jpg');
 	background-size: 100%;
-	padding-bottom: 4%;
 	background-repeat: no-repeat;
 	color: #fff;
+}
+
+.about button {
+	margin-top: 2%;
+	background: #fff;
+	border: none;
+	color: green;
 }
 
 .about img {
@@ -198,11 +214,11 @@ i {
 	text-align: center;
 	margin-top: 2%;
 	color: #fff;
+	font-size: 160%;
 }
 
 .about p {
 	text-align: center;
-	margin: 1%;
 	font-size: 90%;
 	padding-right: 18%;
 	padding-left: 18%;
@@ -210,12 +226,14 @@ i {
 
 .capabalities h2 {
 	text-align: center;
+	font-size: 160%;
 	margin-top: 4%;
-	color: #231F20;
+	color: #38B449;
 }
 
 .capabalities p {
 	text-align: center;
+	font-size: 90%;
 	margin: 2%;
 	padding-right: 18%;
 	padding-left: 18%;
