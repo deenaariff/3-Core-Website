@@ -1,0 +1,41 @@
+/*==================================================
+ * Our Work STYLE SHEET
+ * Home Page
+
+ * Color References
+   	* Green: #38B449;
+   	* Grey: #36454f;
+   	* 
+
+ * Attribute Explanationas
+ 	* position
+ 		- fixed: scrolls as you scroll;
+ 		- relative: stays positioned relative to other elements;
+ 	* width
+ 		- width of element
+ 		- % determines width in relation to element one level higher
+ 	* height
+ 		- height of element
+ 	* background
+ 		- background color
+ 		- background-image: used to make image background;
+ 	* color
+ 		- font color
+ 	* z-index
+ 		- location of element on z-axis
+ 	* display
+ 		- inline-block: displays elements horizontally if space available
+ 		- block: displays elements vertically;
+
+ * ===============================================*/
+
+.work {
+ 	height: auto;
+	min-height: 48vw;
+	width: 100%;
+	background: #000;
+}
+
+.work h1 {
+	color: #fff;
+}

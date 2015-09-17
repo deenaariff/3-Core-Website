@@ -32,5 +32,36 @@ Controllers.controller('iconCtrl', function($scope) {
     	},
     ];
 
+    $scope.panels = [
+	    {id: 0,
+	     name: 'about',
+	     status: true
+	    },
+	    {id: 1,
+	     name: 'work',
+	     status: false
+	    },
+	    {id: 2,
+	     name: 'people',
+	     status: false
+	    },
+	    {id: 3,
+	     name: 'blog',
+	     status: false
+	    },
+	    {id: 5,
+	     name: 'contact',
+	     status: false
+	    }
+    ];
+
+    $scope.currentPanel = 0;
+
+    $scope.nav = function (id) {
+    	$scope.panels[$scope.currentPanel].status = false;
+    	$scope.panels[id].status = true;
+    	$scope.currentPanel = id;
+    }
+
 });
 

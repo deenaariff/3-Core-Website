@@ -61,6 +61,12 @@ i {
 }
 
 
+.home .people .blog .contact {
+	height: auto;
+	min-height: 48vw;
+	width: 100%;
+}
+
 /*==================================================
  * Landing
  * ===============================================*/
@@ -79,7 +85,6 @@ i {
 }
 
 .landing p {
-	color: #efefef;
 	margin: 1%;
 }
 
@@ -93,17 +98,21 @@ i {
 	width: 100px;
 	height: 100px; 
 	text-align: center;
-	background:  #38B449;
-	color: #fff;
+	background: #287543;
+	color: #287543;
 	vertical-align: middle;
+	overflow: none;
 }
 
 .landing .circle:hover {
-	background: #287543;
+	background: #38B449;
+	color: #fff;
 }
 
 .landing .circle p {
-	vertical-align: middle;
+	position: relative;
+  	top: 50%;
+ 	transform: translateY(-50%);
 }
 
 .landing .headline {
@@ -111,8 +120,8 @@ i {
 }
 
 .landing ul {
-	margin-left: auto;
-	margin-right: auto;
+	display: block;
+	margin: auto;
 }
 
 .name {
@@ -154,39 +163,47 @@ i {
 }
 
 .title {
-	background: #B2DFDB;
+	background: #efefef;
 	text-align: center;
 	padding: .5%;
 }
 
+.title ul {
+	display: block;
+	margin: auto;
+}
+
 .title li {
-	margin-left: 1%;
-	margin-right: 1%;
 	display: inline-block;
+	list-style-type: circle;
+	color: #000;
 }
 
 .about {
 	text-align: center;
-	color: #231F20;
-	background: #B2DFDB;
+	background-image: url('/images/office.jpg');
+	background-size: 100%;
 	padding-bottom: 4%;
+	background-repeat: no-repeat;
+	color: #fff;
 }
 
 .about img {
-	margin: 2%;
+	margin: 1%;
 	max-height: 30px;
 	text-align: center;
 }
 
 .about h2 {
 	text-align: center;
-	margin-top: 4%;
-	color: #231F20;
+	margin-top: 2%;
+	color: #fff;
 }
 
 .about p {
 	text-align: center;
-	margin: 2%;
+	margin: 1%;
+	font-size: 90%;
 	padding-right: 18%;
 	padding-left: 18%;
 }
