@@ -30,7 +30,6 @@ $(document).ready(function() {
             choose(1);
         }); 
 
-
     	$( idNames[1] ).hover(function() {
             choose(2);
         }).mouseleave(function() {
@@ -51,7 +50,7 @@ $(document).ready(function() {
     }
 
     function choose (index) {
-    	$( ".headline" ).replaceWith( "<h2 class = 'headline'>" +  messages[index] + "</h2>");
+    	$( ".headline" ).replaceWith( "<h2 class = 'headline animated fadeIn'>" +  messages[index] + "</h2>");
     }
 
     call();

@@ -40,11 +40,16 @@
 }
 
  html body {
-	color: #000000;
+	background: #efefef;
 	font-family: Main;
 	padding: none;
 	display: block;
 }
+
+body {
+	background: #efefef;
+}
+
 .navbar {
 	padding: 10px;
 }
@@ -55,6 +60,10 @@
 
 .navbar-fixed-top {
 	z-index: 6;
+}
+
+.navbar li:hover {
+	color: #38B449;
 }
 
 .exception {
@@ -87,7 +96,7 @@ i {
 
 .landing .logo {
 	text-align: center;
-	margin-right: 2%;
+	margin-right: 3%;
 }
 
 .landing .bold {
@@ -99,6 +108,7 @@ i {
 }
 
 .landing h2 {
+	line-height: 0%;
 	color: #efefef;
 }
 
@@ -126,7 +136,7 @@ i {
 }
 
 .landing .headline {
-	margin-top: 5%;
+	margin-top: 3%;
 }
 
 .landing ul {
@@ -179,14 +189,21 @@ i {
 }
 
 .title ul {
-	display: block;
-	margin: auto;
+	margin-left: 3%;
+	list-style-type: disk;
+	list-style-position: inside;
+	padding-left:5px;
+	overflow: hidden
 }
 
 .title li {
+	margin: 1%;
+	list-style: disk;
 	display: inline-block;
-	list-style-type: circle;
-	color: #000;
+}
+
+.title li:hover {
+	text-decoration: underline;
 }
 
 .about {
@@ -205,7 +222,7 @@ i {
 }
 
 .about img {
-	margin: 1%;
+	margin: 2%;
 	max-height: 30px;
 	text-align: center;
 }
@@ -227,7 +244,8 @@ i {
 .capabalities h2 {
 	text-align: center;
 	font-size: 160%;
-	margin-top: 4%;
+	margin: auto;
+	margin-top: 3%;
 	color: #38B449;
 }
 
@@ -240,8 +258,8 @@ i {
 }
 
 .capabalities .images {
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
+	display: block;
 	width: 90%;
 	text-align: center;
 }
@@ -250,12 +268,12 @@ i {
 	width: 30%;
 	display: inline-block;
 	text-align: center;
+	margin: auto;
 	margin-top: 2.5%;
 	margin-bottom: 2.5%;
 }
 
 .capabalities img {
 	width: 65%;
-	margin-right: auto;
-	margin-left: autol
+	margin: auto;
 }

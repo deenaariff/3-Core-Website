@@ -4,6 +4,7 @@ block content
 
 	.home(ng-show="panels[0].status")
 		.landing
+			// Refer to landing.js for animations
 			.logo.animated.fadeIn
 				.block
 					h1 THREE
@@ -19,9 +20,10 @@ block content
 				h2.headline Lorem Ipsum Dolor
 		.description
 			.title
-				li About
-				li Capabalities
-			.about
+				ul(style="list-style-type:circle")
+					a(href="#about" style="list-style-type:circle") About
+					a(href="#capabilities" style="list-style-type:circle") Capabalities
+			.about#about
 				img(src="/images/logo.png")
 				p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed nunc nulla. Nunc eu tellus commodo, aliquet lectus, commodo lorem. Maecenas vitae suscipit magna. Vestibulum mattis sem ut leo lacinia efficitur. Quisque massa augue, at lobortis vel, euismod quis arcu. Morbi maximus ipsum ac pharetra vestibulum. Quisque non facilisis augue. Curabitur ac imperdiet quam, vitae dictum velit. Nullam tincidunt sem ac volutpat imperdiet. Mauris lacinia convallis dictum.
 				h2 Creative
@@ -31,7 +33,7 @@ block content
 				h2 Collaboration
 				p Mauris accumsan nibh eget nibh blandit mollis. Aliquam consectetur odio turpis, eget consequat tortor facilisis eget. Curabitur accumsan tristique massa, vitae malesuada sem tristique ac. Etiam rutrum augue nec justo congue, ac ullamcorper dui posuere. Curabitur rhoncus fringilla commodo. Quisque nec sapien aliquet, accumsan nibh vitae, rutrum velit. Integer fermentum placerat  tortor, eu vehicula tortor dapibus non. Curabitur tincidunt posuere gravida. Integer condimentum eros vel orci sagittis lobortis.
 				button Icons
-			.capabalities
+			.capabalities#capabilities
 				h2 Capabalities
 				p Quisque commodo feugiat diam ut pretium. Phasellus efficitur lacus id lectus bibendum elementum. Aliquam vitae neque sitamet orci pharetra porta in a tellus. Mauris in elit ac lectus imperdiet sagittis vitae vulputate nisl. Nullam non consectetur arcu. Integer venenatis libero enim, vitae efficitur ante fringilla eu. Aliquam erat volutpat. Morbi consectetur blandit libero, a dictum nunc viverra ac. Aliquam commodo urna vitae sapien iaculis rhoncus
 				.icons
