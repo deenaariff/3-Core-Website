@@ -49,10 +49,10 @@ block content
 			p Mauris accumsan nibh eget nibh blandit mollis. Aliquam consectetur odio turpis, eget consequat tortor facilisis eget. Curabitur accumsan tristique massa, vitae malesuada sem tristique ac. Etiam rutrum augue nec justo congue, ac ullamcorper dui posuere. Curabitur rhoncus fringilla commodo. Quisque nec sapien aliquet, accumsan nibh vitae, rutrum velit. Integer fermentum placerat tortor, eu vehicula tortor dapibus non. Curabitur tincidunt posuere gravida. Integer condimentum eros vel orci sagittis lobortis.
 		.clients
 			h1 Clients
-			ul(ng-repeat = "image in images")
+			ul(ng-repeat = "work in work")
 				.images
 					img(src='images/work/{{work.img}} green.png')
-					p {{image.name}}
+					p {{work.name}}
 	.people(ng-show="panels[2].status")
 		h1 People Page
 	.blog(ng-show="panels[3].status")
