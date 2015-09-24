@@ -3,7 +3,7 @@
  * Home Page
 
  * Color References
-   	* Green: #38B449;
+   	* Green: b
    	* Grey: #36454f;
    	* 
 
@@ -31,11 +31,55 @@
 
 .work {
  	height: auto;
-	min-height: 48vw;
+	min-height: 100%;
 	width: 100%;
-	background: #000;
 }
 
 .work h1 {
+	text-align: center;
+}
+
+.work .intro h1 {
 	color: #fff;
+	margin-bottom: 2%;
+}
+
+.work .intro{
+	background: #38B449;
+	padding: 5%;
+ 	padding-top: 8%;
+ 	display: block;
+  	min-height: 28vw;
+ 	text-align: center;
+	height: auto;
+}
+
+.work .intro p {
+	color: #fff;
+	text-align: center;
+	font-size: 90%;
+	padding-right: 18%;
+	padding-left: 18%;
+}
+
+
+.clients .images {
+	margin: auto;
+	display: block;
+	width: 80%;
+}
+
+.clients ul {
+	width: 30%;
+	display: inline-block;
+	text-align: center;
+	margin: auto;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+}
+
+.clients img {
+	width: 65%;
+	margin: auto;
+	display: block;
 }

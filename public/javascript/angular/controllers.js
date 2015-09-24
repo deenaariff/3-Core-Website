@@ -29,7 +29,37 @@ Controllers.controller('iconCtrl', function($scope) {
     	},
     	{name: 'Stakeholder Managment',
     	 img: 'stakeholder management.png'
-    	},
+    	}
+    ];
+
+    $scope.work = [
+        {name: 'Etiqa',
+         img: 'etiqa'
+        },
+        {name: 'EXIM Bank',
+         img: 'eximbank'
+        },
+        {name: 'IJM',
+         img: 'ijm'
+        },
+        {name: 'Maybank Asset Management',
+         img: 'maybank asset management'
+        },
+        {name: 'Maybank',
+         img: 'maybank'
+        },
+        {name: 'MDEC',
+         img: 'mdec'
+        },
+        {name: 'MYREN',
+         img: 'MYREN'
+        },
+        {name: 'Pasarnita',
+         img: 'pasarnita'
+        },
+        {name: 'Takaful Ikhlas',
+         img: 'takaful ikhlas'
+        }
     ];
 
     $scope.panels = [
