@@ -34,30 +34,48 @@ Controllers.controller('iconCtrl', function($scope) {
 
     $scope.work = [
         {name: 'Etiqa',
+         id: 0,
+         state: true,
          img: 'etiqa'
         },
         {name: 'EXIM Bank',
+         id: 1,
+         state: true,
          img: 'eximbank'
         },
         {name: 'IJM',
+         id: 2,
+         state: true,
          img: 'ijm'
         },
         {name: 'Maybank Asset Management',
+         id: 3,
+         state: true,
          img: 'maybank asset management'
         },
         {name: 'Maybank',
+         id: 4,
+         state: true,
          img: 'maybank'
         },
         {name: 'MDEC',
+         id: 5,
+         state: true,
          img: 'mdec'
         },
         {name: 'MYREN',
+         id: 6,
+         state: true,
          img: 'MYREN'
         },
         {name: 'Pasarnita',
+         id: 7,
+         state: true,
          img: 'pasarnita'
         },
         {name: 'Takaful Ikhlas',
+         id: 8,
+         state: true,
          img: 'takaful ikhlas'
         }
     ];
@@ -92,6 +110,18 @@ Controllers.controller('iconCtrl', function($scope) {
     	$scope.panels[id].status = true;
     	$scope.currentPanel = id;
     }
+ 
+    $scope.colorSwitcher = null;
 
+    $scope.makeColor = function (id) {
+        if ($scope.colorSwitcher != null)
+            $scope.work[$scope.colorSwitcher].state = true;
+        $scope.work[id].state = false;
+        $scope.colorSwitcher = id;
+    }
+
+    $scope.makeGreen = function (id) {
+        $scope.work[id].state = true;
+    }
 });
 

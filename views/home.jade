@@ -51,7 +51,8 @@ block content
 			h1 Clients
 			ul(ng-repeat = "work in work")
 				.images
-					img(src='images/work/{{work.img}} green.png')
+					img(ng-click='makeColor(work.id)' ng-show="work.state" src='images/work/{{work.img}} green.png')
+					img(ng-click='makeGreen(work.id)' ng-hide="work.state" src='images/work/{{work.img}}.png')
 					p {{work.name}}
 	.people(ng-show="panels[2].status")
 		h1 People Page
